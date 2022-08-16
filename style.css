@@ -6,7 +6,7 @@
 }
 body {
     background-color:black;
-    background-image:url(/images/desktop.png);
+    background-image:url(images/desktop.png);
     background-repeat:no-repeat;
     background-size:cover;
     text-align: center;
@@ -88,7 +88,7 @@ button:hover{
 @media (max-width: 767px)
 {
     body{
-        background:url(/images/mobile.png);
+        background:url(images/mobile.png);
         background-repeat:no-repeat;
         background-size:cover;
     }
