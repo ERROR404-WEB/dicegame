@@ -91,6 +91,7 @@ button:hover{
 @keyframes rotatee{
     100%{
         transform: rotateY(360deg);
+        box-shadow: 0px 0px 20px white;
     }
 }
 
@@ -102,7 +103,7 @@ button:hover{
         background-size:cover;
     }
     .heading h1{
-        /* font-size: 50px; */
+       
         margin-top: 10%;
     }
     .dices{
