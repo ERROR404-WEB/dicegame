@@ -56,6 +56,15 @@ body {
     color:aliceblue;
     margin:10px;
 }
+.animate2{
+    animation: gloww  infinite 2s;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+    }
+  
 @keyframes gloww{
     20%{
       text-shadow:0px 0px 15px  rgb(0, 217, 255);
@@ -97,7 +106,10 @@ button:hover{
         margin-top: 10%;
     }
     .dices{
-        margin-top: 30%;
+        margin-top: 20%;
+    }
+    button{
+        font-size:25px;
     }
 }
 footer{
@@ -106,3 +118,28 @@ footer{
     margin-bottom: 0px;
 
 }
+#preloader{
+    top:0%;
+    background: #000 url(images/preloader.gif) no-repeat center;
+    height: 100vh;
+    width: 102%;
+    position:fixed;
+    z-index:100;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .pretext{
+    margin-top:30%;
+    margin-left: 10px;
+    color:rgba(238, 255, 0, 0.893);
+    font-size: 1.5rem;
+    font-family: 'Staatliches', cursive;
+    animation: glowww infinite 2s;
+  }
+  @keyframes glowww{
+    20%{
+      text-shadow:0px 0px 15px  rgb(251, 255, 0);
+      transform:scale(1.02);
+    }
+  }

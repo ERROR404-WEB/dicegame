@@ -1,4 +1,10 @@
 var c=0;
+var loader=document.getElementById("preloader");
+window.addEventListener("load",function()
+{
+    loader.style.display="none";
+})
+
 function run()
 {
 
