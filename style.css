@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'DynaPuff', cursive;
+}
+body {
+    background-color:black;
+    background-image:url(/images/desktop.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    text-align: center;
+
+}
+.heading{
+    margin: 3%;
+}
+.glow{
+    box-shadow: 0px 0px 10px white;
+}
+.text-glow{
+    text-shadow: 0px 0px 10px white;
+}
+.heading h1{
+    font-size: 50px;
+    color:white;
+
+    animation: gloww infinite 2s;
+}
+.dices{
+    text-align: center;
+   
+}
+.dice-size{
+    width:100px;
+    margin-top:8%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);
+  
+
+}
+.win{
+    color:rgb(255, 255, 255);
+    text-shadow:0px 0px 10px greenyellow;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+.visible{
+    visibility: hidden;
+}
+.dice1,.dice2{
+    display: inline-block;
+    margin:50px 50px 10px 50px;
+    vertical-align: middle;
+}
+.player{
+    color:aliceblue;
+    margin:10px;
+}
+@keyframes gloww{
+    20%{
+      text-shadow:0px 0px 15px  rgb(0, 217, 255);
+      transform:scale(1.02);
+    }
+  }
+button{
+    padding:5px 10px 5px 10px;
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border:none;
+    transition: 0.2s;
+}
+button:hover{
+    box-shadow: 0px 0px 10px rgb(0, 221, 255);
+    cursor:pointer;
+    transform: scale(1.1);
+}
+
+.animate{
+    animation: rotatee 1s infinite;
+}
+@keyframes rotatee{
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+@media (max-width: 767px)
+{
+    body{
+        background:url(/images/mobile.png);
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+    .heading h1{
+        font-size: 70px;
+        margin-top: 10%;
+    }
+    .dices{
+        margin-top: 30%;
+    }
+}
+footer{
+    bottom: 0;
+    color:aliceblue;
+    margin-bottom: 0px;
+
+}
